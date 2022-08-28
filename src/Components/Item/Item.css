@@ -1,0 +1,10 @@
+.item {
+  min-height: 3rem;
+  padding: 0.5rem 0.5rem;
+  background-color: #0a9396;
+  border: 1px solid #7f8c8d;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+  color: #fff;
+  word-wrap: break-word;
+}

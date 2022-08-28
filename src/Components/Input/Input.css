@@ -1,0 +1,33 @@
+.FORM {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.input {
+  border: 1px solid #8c7ae6;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.input,
+.btn {
+  height: 3rem;
+}
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  width: 5rem;
+  border: none;
+  color: #fff;
+  background-color: #0a9396;
+  margin-left: 0.5rem;
+  border-radius: 15px;
+}
+.btn:hover {
+  background-color: #3e8e41;
+}
+.btn:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
