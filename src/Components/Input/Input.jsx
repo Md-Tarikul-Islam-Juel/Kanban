@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 import './Input.css';
 
 export default function Input({ collectChildDataFromInput }) {
@@ -17,20 +19,21 @@ export default function Input({ collectChildDataFromInput }) {
     };
     return (
         <>
-            <form className="FORM" onSubmit={handleSubmit}>
-                <input
-                    type="text"
-                    name="name"
-                    className="input"
-                    placeholder="Add Task"
-                    onChange={handleChange}
-                    value={currentTask}
-                />
+            <Form className="FORM" onSubmit={handleSubmit}>
+                <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Control
+                        className="input"
+                        type="text"
+                        placeholder="Add Task"
+                        onChange={handleChange}
+                        value={currentTask}
+                    />
+                </Form.Group>
 
-                <button className="btn" type="submit">
+                <Button className="btn" variant="primary" type="submit">
                     Add
-                </button>
-            </form>
+                </Button>
+            </Form>
         </>
     );
 }

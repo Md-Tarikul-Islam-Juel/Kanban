@@ -1,7 +1,6 @@
 .container {
   background-color: #dcdde1;
   padding: 20px 0;
-  margin: 0 100px;
 }
 .box {
   border: 2px solid black;
@@ -10,7 +9,6 @@
   background-color: #e67e22;
 }
 .box-header {
-  margin: 0;
   background-color: #005f73;
   text-align: center;
   border-bottom: 2px solid black;
@@ -43,17 +41,4 @@
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
-}
-.row-1 {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-.row-2 {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-}
-.column {
-  width: 33.33%;
 }

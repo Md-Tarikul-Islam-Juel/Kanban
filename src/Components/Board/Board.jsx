@@ -134,14 +134,14 @@ export default function Board() {
     return (
         <>
             <div className="container">
-                <div className="row-1">
-                    <div>
+                <div className="row row-1">
+                    <div className=" col-md-6 offset-3">
                         <Input collectChildDataFromInput={handleChildData} />
                     </div>
                 </div>
                 <DragDropContext onDragEnd={(result) => onDragEnd(result)}>
-                    <div className="row-2">
-                        <div className="column">
+                    <div className="row row-2">
+                        <div className="col-md-4 ">
                             <div className="box">
                                 <h1 className="box-header">To Do</h1>
                                 <Droppable droppableId="column-1">
@@ -176,7 +176,7 @@ export default function Board() {
                                 </Droppable>
                             </div>
                         </div>
-                        <div className="column">
+                        <div className="col-md-4 ">
                             <div className="box">
                                 <h1 className="box-header">In Progress</h1>
                                 <Droppable droppableId="column-2">
@@ -211,7 +211,7 @@ export default function Board() {
                                 </Droppable>
                             </div>
                         </div>
-                        <div className="column">
+                        <div className="col-md-4 ">
                             <div className="box">
                                 <h1 className="box-header">Done</h1>
                                 <Droppable droppableId="column-3">
@@ -248,7 +248,7 @@ export default function Board() {
                         </div>
                     </div>
                 </DragDropContext>
-                <div className="row-3">
+                <div className="row">
                     <button type="button" className="clean-database-btn" onClick={resetDatabase}>
                         Clean database
                     </button>
